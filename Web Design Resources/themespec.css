@@ -1,0 +1,18 @@
+:root {
+  --c1: #002147; /* Main Colour */
+  --c2: #00A0A5; /* Main Variant */
+  --c3: #E5007E; /* Contrast Colour*/
+  --c4: #161616; /* Off-Black */
+  --c5: #F2F2F2; /* Off-White */
+  --f1: "Georgia", serif; /* Title font */
+  --f2: "Verdana", sans-serif; /* Title Variant Font */
+  --f3: "Verdana", sans-serif; /* Text font */
+
+  font-size: 16px; /* Root Font Size */
+  color: var(--c4); /* Root Font Colour */
+  font-family: var(--f3); /* Root Font */
+}
+
+@media screen and (max-width: 110vh) { /* Add specifications which only apply on mobile */
+
+}
