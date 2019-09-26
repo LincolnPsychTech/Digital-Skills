@@ -1,0 +1,116 @@
+:root {
+  --c1: #4F7CAC;
+  --c2: #D2F898;
+  --c3: #F6F930;
+  --c4: #2F2F2F;
+  --c5: #FCFCFC;
+  --f1: 'Halant', serif;
+  --f2: 'Prompt', sans-serif;
+  --f3: 'Caudex', serif;
+  
+  color: var(--c4);
+  font-family: var(--f3);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/** Header **/
+body > header {
+  background-color: var(--c1);
+  padding: 10rem;
+  color: white;
+}
+body > header h1 {
+  font-size: 4rem;
+}
+body > header h3 {
+  margin-block-start: 0;
+}
+
+/** Nav Bar **/
+nav {
+  position: sticky; top: 0;
+  background-color: var(--c2);
+  padding: 2rem 10rem;
+}
+nav a {
+  padding-right: 3rem;
+  font: bold 1.5rem var(--f2);
+  text-decoration: none;
+  color: var(--c4);
+}
+nav a:hover {
+  color: var(--c1);
+}
+
+/** Sections **/
+main {
+  padding: 2rem 10vw;
+  margin-bottom: 50vh;
+}
+section > header {
+  font: bold 2rem var(--f1);
+  border-bottom: 10px solid var(--c2);
+  margin: 1rem -1rem;
+}
+
+article {
+  margin: 2rem;
+}
+article > header {
+  font: bold 1.5rem var(--f2);
+  border-bottom: 2px solid var(--c2);
+  margin: 1rem 0;
+}
+
+footer {
+  padding: 2rem 10vw;
+}
+
+/** Publication List **/
+#publications > ul {
+  padding: 0;
+}
+#publications > ul > li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: linear-gradient(to right, var(--c5), transparent);
+  list-style-type: none;
+  font-size: 1.1rem;
+}
+#publications > ul > li .altmetric {
+  float: left; 
+  height: 3rem;
+  border: 0; 
+  margin: 0 1rem; 
+  max-width: none;
+}
+
+/** Images **/
+img.avatar {
+  height: 15rem; width: 15rem;
+  object-fit: cover;
+  object-position: 50% 10%;
+  margin: 1rem;
+}
+
+/** Typography **/
+h1, h2{
+  font-family: var(--f1);
+  margin-block-end: 0.2rem;
+}
+h3, h4, h5, h6 {
+  font-family: var(--f2);
+  margin-block-end: 0.2rem;
+}
+a {
+  color: var(--c1);
+  text-decoration: none;
+  transition: color 1s;
+}
+a:hover {
+  color: var(--c3);
+}
